@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/simplebar.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/swiper.css">
+
+  <script src="https://kit.fontawesome.com/252a2a560c.js" crossorigin="anonymous"></script>
+  <script src="/js/typeWrite.js"></script>
+  <script src="/js/app.js"></script>
+  <title>personal portfolio</title>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div class="header-content">
+        <div class="header-main">
+          <div class="image-container">
+            <h2 class="header-name"> Harry Shi</h2>
+            <img src="img/profile-img.jpg" alt="profile-img">
+          </div>
+          <nav class="nav-menu">
+            <ul>
+              <li>
+                <a href="index.html" class="pt-link">
+                  <span class="nav-menu-icon">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                  </span>
+                  Home
+                </a>
+              </li>
+
+              <li>
+                <a href="about.html" class="pt-link">
+                  <span class="nav-menu-icon">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                  </span>
+                  About Me
+                </a>
+              </li>
+
+              <!-- <li>
+                <a href="#resume" class="pt-link">
+                  <span class="nav-menu-icon">
+                    <i class="fa fa-address-card-o" aria-hidden="true"></i>
+                  </span>
+                  Resume
+                </a>
+              </li> -->
+
+              <li>
+                <a href="portfolio.html" class="pt-link">
+                  <span class="nav-menu-icon">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                  </span>
+                  Portfolio
+                </a>
+              </li>
+
+              <!-- <li>
+                <a href="#blog" class="pt-link">
+                  <span class="nav-menu-icon">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                  </span>
+                  Blog
+                </a>
+              </li> -->
+
+              <li>
+                <a href="contact.html" class="pt-link">
+                  <span class="nav-menu-icon">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  </span>
+                  Contact
+                </a>
+              </li>
+
+            </ul>
+          </nav>
+          <nav class="nav-footer">
+            <ul class="social">
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="copy">
+              <p>2023 © Huimin Li.<br>All Right Reserved.
+              </p>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+
+    <body>
+      <div class="site-main" id="main">
+        <section class="contact-section pt-page page-active" id="contact" data-simplebar="init">
+          <div class="simplebar-wrapper" style="margin: 0px;">
+            <div class="simplebar-height-auto-observer-wrapper">
+              <div class="simplebar-height-auto-observer"></div>
+            </div>
+            <div class="simplebar-mask">
+              <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                <div class="simplebar-content-wrapper" tabindex="0" role="region" aria-label="scrollable content"
+                  style="height: 100%; overflow: hidden scroll;">
+                  <div class="simplebar-content" style="padding: 0px;">
+                    <div class="section-container">
+                      <div class="page-heading"><span class="icon"><i class="lnr lnr-envelope"></i></span>
+                        <h2>Contact Me.</h2>
+                      </div>
+                      <div class="row mb-70">
+                        <div class="col-lg-8 offset-lg-2">
+                          <div class="subheading">
+                            <h3>Let's Talk</h3>
+                          </div>
+                          <form id="contact-form" method="post" action="mail.php">
+                            <div class="row">
+                              <div class="col-md-6 mb-50"><span class="input"><input class="input__field cf-validate"
+                                    type="text" id="cf-name" name="name"><label class="input__label"
+                                    for="cf-name">Name</label></span></div>
+                              <div class="col-md-6 mb-50"><span class="input"><input class="input__field cf-validate"
+                                    type="text" id="cf-email" name="email"><label class="input__label"
+                                    for="cf-email">Email</label></span></div>
+                              <div class="col-md-12 mb-30"><span class="input"><textarea
+                                    class="input__field cf-validate" id="cf-message" name="message"
+                                    rows="5"></textarea><label class="input__label" for="cf-message">How can we help
+                                    you?</label></span></div>
+                              <div class="alert-container col-md-12"></div>
+                              <div class="col-md-12 text-center"><button id="cf-submit" class="btn-main">Send
+                                  Message</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="row contact-info mb-70">
+                        <div class="col-md-4 info-item"><span class="icon"><i class="fas fa-paper-plane"></i></span>
+                          <h5><a href="mailto:example@example.com">example@example.com</a></h5>
+                        </div>
+                        <div class="col-md-4 info-item"><span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                          <h5>123 Lorem Ipsum, USA</h5>
+                        </div>
+                        <div class="col-md-4 info-item"><span class="icon"><i class="fas fa-phone"></i></span>
+                          <h5>(+1) 123 456 7890</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="google"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3686.1115335095633!2d-99.88990078708842!3d39.02357111669505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1673767198655!5m2!1sen!2sbd"
+                        width="100%" height="200" style="border:0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="simplebar-placeholder" style="width: auto; height: 971px;"></div>
+          </div>
+          <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+            <div class="simplebar-scrollbar" style="width: 0px; display: none; transform: translate3d(0px, 0px, 0px);">
+            </div>
+          </div>
+          <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
+            <div class="simplebar-scrollbar"
+              style="height: 513px; transform: translate3d(0px, 0px, 0px); display: block;">
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </body>
+
+</html>
