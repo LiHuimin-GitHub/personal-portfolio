@@ -914,8 +914,8 @@ blockquote {
   display: inline-block;
   white-space: nowrap;
   width: 0;
-  overflow: hidden;
-  animation: typing-text 4s steps(11, end) infinite;
+  overflow-x:clip;
+  animation: typing-text 4s steps(10, end) infinite;
 }
 
 @keyframes typing-text {
