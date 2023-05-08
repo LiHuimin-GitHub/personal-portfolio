@@ -24,6 +24,8 @@ h5,
 h6 {
     margin: 0;
     padding: 0;
+    font-family: "Playfair Display", serif;
+    color: #222;
 }
 
 i,
@@ -46,15 +48,7 @@ body {
     background-color: #2a2b30;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Playfair Display", serif;
-    color: #222;
-}
+
 
 span {
     display: inline-block;
@@ -503,6 +497,7 @@ header .header-mobile .header-toggle i {
     border-radius: 27px;
     border: 1px dashed rgba(0, 0, 0, 0.2);
     line-height: 0;
+
 }
 
 .portfolio-section .portfolio-filter ul li {
@@ -520,12 +515,27 @@ header .header-mobile .header-toggle i {
     transition: all .3s ease;
 }
 
-.portfolio-section .portfolio-filter ul li.active {
-    background-color: #222;
-    -webkit-border-radius: 27px;
-    border-radius: 27px;
-    color: #FBFBFB;
+.portfolio-section .portfolio-filter ul li button{
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    color: #555;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    overflow: hidden;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    border-radius: 12px;
+    box-shadow: none;
+    
+    
+    
 }
+
+
 
 .portfolio-section {
     overflow: hidden;
@@ -766,6 +776,12 @@ blockquote {
     margin: 40px 0;
     font-weight: 500;
 }
+
+.button-selected {
+    background-color: black;
+    color: white;
+  }
+
 
 
 /*============  Contact Section ============*/

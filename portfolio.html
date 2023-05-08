@@ -11,9 +11,7 @@
   <link rel="stylesheet" href="css/swiper.css">
 
   <script src="https://kit.fontawesome.com/252a2a560c.js" crossorigin="anonymous"></script>
-  <script src="/js/typeWrite.js"></script>
-  <script src="/js/app.js"></script>
-  <script src="/js/dataFilter.js"></script>
+
   <title>personal portfolio</title>
 </head>
 
@@ -116,25 +114,28 @@
                     </div>
                     <div class="row">
                       <div class="col-md-12 portfolio-filter text-center">
+
                         <ul>
-                          <li class="c-pointer active" data-filter="painted" onclick="showPortfolioItems('painted')">
-                            <a href="#painted"> painted</a>
+                          <li data-filter="painted">
+                            <button id="button1">painted</button>
                           </li>
-                          <li class="c-pointer " data-filter="banners" onclick="showPortfolioItems('banners')"><a
-                              href="#banners"> banner</a>
+                          <li data-filter="banners">
+                            <button id="button2">banner</button>
                           </li>
-                          <li class="c-pointer " data-filter="posters" onclick="showPortfolioItems('posters')"><a
-                              href="#posters">poster</a></li>
-                          <li class="c-pointer " data-filter="digital-drawing"
-                            onclick="showPortfolioItems('digital-drawing')"><a href="#digital-drawing"> digital
-                              Drawing</a></li>
-                          <li class="c-pointer " data-filter="logo" onclick="showPortfolioItems('logo')"><a
-                              href="#logo"> logo</a></li>
+                          <li data-filter="posters">
+                            <button id="button3">poster</button>
+                          <li data-filter="digital-drawing">
+                            <button id="button4">digital drawing</button>
+                          </li>
+                          <li data-filter="logo">
+                            <button id="button5">Logo</button>
+
+                          </li>
                         </ul>
                       </div>
                     </div>
 
-                    <div class="row portfolio-items" data-filter="painted"
+                    <div class="row portfolio-items" data-filter="painted" id="div1"
                       style="position: relative; height: 1401.86px;">
                       <div class="item col-lg-4 col-sm-6 " style="position: absolute; left: 0%; top: 0px;">
                         <a class="image-link" href="img/porfolio/painted-1.jpg">
@@ -156,9 +157,9 @@
                       </div>
                     </div>
 
-                    <div class="row portfolio-items" data-filter="banners"
+                    <div class="row portfolio-items" data-filter="banners" id="div2"
                       style="position: relative; height: 1401.86px;">
-                      <div class="item col-lg-4 col-sm-6" data-filter="banners" id="banners"
+                      <div class="item col-lg-4 col-sm-6" data-filter="banners"
                         style="position: absolute; left: 0%; top: 0%;">
                         <a class="image-link" href="img/porfolio/banner-1.jpg">
                           <figure><img src="img/porfolio/banner-1.jpg" alt="banner Image">
@@ -183,9 +184,9 @@
 
 
 
-                    <div class="row portfolio-items" data-filter="posters"
+                    <div class="row portfolio-items" data-filter="posters" id="div3"
                       style="position: relative; height: 1401.86px;">
-                      <div class="item col-lg-4 col-sm-6" data-filter="posters" id="posters"
+                      <div class="item col-lg-4 col-sm-6" data-filter="posters"
                         style="position: absolute; left: 0%; top: 0%;">
                         <a class="image-link" href="img/porfolio/poster-1.jpg">
                           <figure></figure><img src="img/porfolio/poster-1.jpg" alt="poster Image">
@@ -216,9 +217,9 @@
                     </div>
 
 
-                    <div class="row portfolio-items" data-filter="digital-drawing"
+                    <div class="row portfolio-items" data-filter="digital-drawing" id="div4"
                       style="position: relative; height: 1401.86px;">
-                      <div class="item col-lg-4 col-sm-6" data-filter="digital-drawing" id="digital-drawing"
+                      <div class="item col-lg-4 col-sm-6" data-filter="digital-drawing"
                         style="position: absolute; left: 0%; top: 0%;">
                         <a class="image-link" href="img/porfolio/digital-drawing-1.jpg">
                           <figure><img src="img/porfolio/digital-drawing-1.jpg" alt="digital-drawing Image">
@@ -255,10 +256,9 @@
 
 
 
-
-
-                    <div class="row portfolio-items" data-filter="logo" style="position: relative; height: 1401.86px;">
-                      <div class="item col-lg-4 col-sm-6" data-filter="logo" id="logo"
+                    <div class="row portfolio-items" data-filter="logo" id="div5"
+                      style="position: relative; height: 1401.86px;">
+                      <div class="item col-lg-4 col-sm-6" data-filter="logo"
                         style="position: absolute; left: 0%; top: 0%;">
                         <a class="image-link" href="img/porfolio/logo-1.jpg">
                           <figure><img src="img/porfolio/logo-1.jpg" alt="logo Image">
@@ -302,10 +302,6 @@
 
 
 
-
-
-
-
                   </div>
                 </div>
               </div>
@@ -326,7 +322,93 @@
       </section>
     </div>
   </div>
+  <script>
+    // 获取按钮元素和内容元素
+    var button1 = document.getElementById("button1");
+    var button2 = document.getElementById("button2");
+    var button3 = document.getElementById("button3");
+    var button4 = document.getElementById("button4");
+    var button5 = document.getElementById("button5");
+    var div1 = document.getElementById("div1");
+    var div2 = document.getElementById("div2");
+    var div3 = document.getElementById("div3");
+    var div4 = document.getElementById("div4");
+    var div5 = document.getElementById("div5");
 
+    // 添加点击事件监听器
+    button1.addEventListener("click", function () {
+      div1.style.display = "block";
+      div2.style.display = "none";
+      div3.style.display = "none";
+      div4.style.display = "none";
+      div5.style.display = "none";
+
+      button1.classList.add("button-selected");
+      button2.classList.remove("button-selected");
+      button3.classList.remove("button-selected");
+      button4.classList.remove("button-selected");
+      button5.classList.remove("button-selected");
+    });
+
+    button2.addEventListener("click", function () {
+      div1.style.display = "none";
+      div2.style.display = "block";
+      div3.style.display = "none";
+      div4.style.display = "none";
+      div5.style.display = "none";
+
+      button1.classList.remove("button-selected");
+      button2.classList.add("button-selected");
+      button3.classList.remove("button-selected");
+      button4.classList.remove("button-selected");
+      button5.classList.remove("button-selected");
+
+    });
+
+    button3.addEventListener("click", function () {
+      div1.style.display = "none";
+      div2.style.display = "none";
+      div3.style.display = "block";
+      div4.style.display = "none";
+      div5.style.display = "none";
+
+      button1.classList.remove("button-selected");
+      button2.classList.remove("button-selected");
+      button3.classList.add("button-selected");
+      button4.classList.remove("button-selected");
+      button5.classList.remove("button-selected");
+    });
+
+    button4.addEventListener("click", function () {
+      div1.style.display = "none";
+      div2.style.display = "none";
+      div3.style.display = "none";
+      div4.style.display = "block";
+      div5.style.display = "none";
+
+      button1.classList.remove("button-selected");
+      button2.classList.remove("button-selected");
+      button3.classList.remove("button-selected");
+      button4.classList.add("button-selected");
+      button5.classList.remove("button-selected");
+    });
+
+    button5.addEventListener("click", function () {
+      div1.style.display = "none";
+      div2.style.display = "none";
+      div3.style.display = "none";
+      div4.style.display = "none";
+      div5.style.display = "block";
+
+      button1.classList.remove("button-selected");
+      button2.classList.remove("button-selected");
+      button3.classList.remove("button-selected");
+      button4.classList.remove("button-selected");
+      button5.classList.add("button-selected");
+    });
+
+
+  </script>
 </body>
 
 </html>
