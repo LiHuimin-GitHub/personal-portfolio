@@ -124,51 +124,64 @@
                   style="height: 100%; overflow: hidden scroll;">
                   <div class="simplebar-content" style="padding: 0px;">
                     <div class="section-container">
-                      <div class="page-heading"><span class="icon"><i class="lnr lnr-envelope"></i></span>
+                      <div class="page-heading"><span class="icon"><i class="fa fa-envelope"></i></span>
                         <h2>Contact Me.</h2>
                       </div>
-                      <div class="row mb-70">
+                      <div class="row">
                         <div class="col-lg-8 offset-lg-2">
                           <div class="subheading">
                             <h3>Let's Talk</h3>
                           </div>
-                          <form id="contact-form" method="post" action="mail.php">
+                          <form id="contact-form" method="post" action="mailto:hshils6@gmail.com">
                             <div class="row">
-                              <div class="col-md-6 mb-50"><span class="input"><input class="input__field cf-validate"
-                                    type="text" id="cf-name" name="name"><label class="input__label"
-                                    for="cf-name">Name</label></span></div>
-                              <div class="col-md-6 mb-50"><span class="input"><input class="input__field cf-validate"
-                                    type="text" id="cf-email" name="email"><label class="input__label"
-                                    for="cf-email">Email</label></span></div>
-                              <div class="col-md-12 mb-30"><span class="input"><textarea
-                                    class="input__field cf-validate" id="cf-message" name="message"
-                                    rows="5"></textarea><label class="input__label" for="cf-message">How can we help
-                                    you?</label></span></div>
-                              <div class="alert-container col-md-12"></div>
-                              <div class="col-md-12 text-center"><button id="cf-submit" class="btn-main">Send
+                              <div class="col-md-6 mb-50">
+                                <label>Name<span>(required)</span></label>
+                                <input type="text" name="name" id="cf-name" class="input__field cf-validate" required=""
+                                  aria-required="true">
+                              </div>
+
+                              <div class="col-md-6 mb-50">
+                                <label>Email<span>(required)</span></label>
+                                <input type="email" name="email" id="cf-email" value="" class="input__field cf-validate"
+                                  required="" aria-required="true">
+                              </div>
+                              <div class="col-md-12 mb-30">
+                                <label>How can we help you?</label>
+                                <textarea name="message" id="cf-message" rows="5"
+                                  class="input__field cf-validate"></textarea>
+                              </div>
+
+
+                              <div class="col-md-12 text-center"><button class="btn-main" type="submit">Send
                                   Message</button>
                               </div>
+
+
                             </div>
                           </form>
                         </div>
                       </div>
-                      <div class="row contact-info mb-70">
-                        <div class="col-md-4 info-item"><span class="icon"><i class="fas fa-paper-plane"></i></span>
-                          <h5><a href="mailto:example@example.com">example@example.com</a></h5>
+                      <div class="row contact-info">
+                        <div class="col-md-4 info-item"><span class="icon"><i class="fa fa-paper-plane"></i></span>
+                          <h5><a href="mailto:hshils6@gmail.com">hshils6@gmail.com</a></h5>
                         </div>
-                        <div class="col-md-4 info-item"><span class="icon"><i class="fas fa-map-marker-alt"></i></span>
-                          <h5>123 Lorem Ipsum, USA</h5>
+                        <div class="col-md-4 info-item"><span class="icon"><i class="fa fa-map-marker-alt"></i></span>
+                          <h5>141 Liverpool Street Hobart</h5>
                         </div>
-                        <div class="col-md-4 info-item"><span class="icon"><i class="fas fa-phone"></i></span>
-                          <h5>(+1) 123 456 7890</h5>
+                        <div class="col-md-4 info-item"><span class="icon"><i class="fa fa-phone"></i></span>
+                          <h5>0449667386</h5>
                         </div>
                       </div>
                     </div>
                     <div class="google"><iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3686.1115335095633!2d-99.88990078708842!3d39.02357111669505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1673767198655!5m2!1sen!2sbd"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d0.002070439750814422!2d147.3254061542672!3d-42.882506670876374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1673767198655!5m2!1sen!2sbd"
                         width="100%" height="200" style="border:0" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
                   </div>
+
+
+
                 </div>
               </div>
             </div>

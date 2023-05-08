@@ -13,6 +13,7 @@
   <script src="https://kit.fontawesome.com/252a2a560c.js" crossorigin="anonymous"></script>
   <script src="/js/typeWrite.js"></script>
   <script src="/js/app.js"></script>
+  <script src="/js/dataFilter.js"></script>
   <title>personal portfolio</title>
 </head>
 
@@ -45,14 +46,7 @@
                 </a>
               </li>
 
-              <!-- <li>
-                <a href="#resume" class="pt-link">
-                  <span class="nav-menu-icon">
-                    <i class="fa fa-address-card-o" aria-hidden="true"></i>
-                  </span>
-                  Resume
-                </a>
-              </li> -->
+
 
               <li>
                 <a href="portfolio.html" class="pt-link">
@@ -63,14 +57,7 @@
                 </a>
               </li>
 
-              <!-- <li>
-                <a href="#blog" class="pt-link">
-                  <span class="nav-menu-icon">
-                    <i class="fa fa-book" aria-hidden="true"></i>
-                  </span>
-                  Blog
-                </a>
-              </li> -->
+
 
               <li>
                 <a href="contact.html" class="pt-link">
@@ -130,140 +117,215 @@
                     <div class="row">
                       <div class="col-md-12 portfolio-filter text-center">
                         <ul>
-                          <li class="c-pointer active" data-filter="*">All</li>
-                          <li class="c-pointer " data-filter=".brand">Brand</li>
-                          <li class="c-pointer " data-filter=".design">Design</li>
-                          <li class="c-pointer " data-filter=".graphic">Graphic</li>
+                          <li class="c-pointer active" data-filter="painted" onclick="showPortfolioItems('painted')">
+                            <a href="#painted"> painted</a>
+                          </li>
+                          <li class="c-pointer " data-filter="banners" onclick="showPortfolioItems('banners')"><a
+                              href="#banners"> banner</a>
+                          </li>
+                          <li class="c-pointer " data-filter="posters" onclick="showPortfolioItems('posters')"><a
+                              href="#posters">poster</a></li>
+                          <li class="c-pointer " data-filter="digital-drawing"
+                            onclick="showPortfolioItems('digital-drawing')"><a href="#digital-drawing"> digital
+                              Drawing</a></li>
+                          <li class="c-pointer " data-filter="logo" onclick="showPortfolioItems('logo')"><a
+                              href="#logo"> logo</a></li>
                         </ul>
                       </div>
                     </div>
-                    <div class="row portfolio-items" style="position: relative; height: 1401.86px;">
-                      <div class="item col-lg-4 col-sm-6 brand graphic" style="position: absolute; left: 0%; top: 0px;">
-                        <a class="image-link" href="img/porfolio/img-1.jpg">
-                          <figure><img src="img/portfolio/img-1.jpg" alt="">
-                            <figcaption>
-                              <h4>Book Design</h4>
-                              <p>Graphic</p>
-                            </figcaption>
+
+                    <div class="row portfolio-items" data-filter="painted"
+                      style="position: relative; height: 1401.86px;">
+                      <div class="item col-lg-4 col-sm-6 " style="position: absolute; left: 0%; top: 0px;">
+                        <a class="image-link" href="img/porfolio/painted-1.jpg">
+                          <figure><img src="img/porfolio/painted-1.jpg" alt="painted Image">
                           </figure>
                         </a>
                       </div>
-                      <div class="item col-lg-4 col-sm-6 design" style="position: absolute; left: 49.9994%; top: 0px;">
-                        <a class="ajax-link" href="#">
-                          <figure><img src="img/portfolio/img-2.jpg" alt="">
-                            <figcaption>
-                              <h4>Notepad Design</h4>
-                              <p>Design</p>
-                            </figcaption>
+                      <div class="item col-lg-4 col-sm-6" style="position: absolute; left: 49.9994%; top: 0px;">
+                        <a class="image-link" href="img/porfolio/painted-2.jpg">
+                          <figure><img src="img/porfolio/painted-2.jpg" alt="painted Image">
                           </figure>
                         </a>
                       </div>
-                      <div class="item col-lg-4 col-sm-6 design graphic"
-                        style="position: absolute; left: 49.9994%; top: 197.672px;"><a class="video-link"
-                          href="https://www.youtube.com/watch?v=k_okcNVZqqI">
-                          <figure><img src="img/portfolio/img-3.jpg" alt="">
-                            <figcaption>
-                              <h4>Creative Cup</h4>
-                              <p>Graphic</p>
-                            </figcaption>
-                          </figure>
-                        </a></div>
-                      <div class="item col-lg-4 col-sm-6 design" style="position: absolute; left: 0%; top: 242.078px;">
-                        <a class="image-link" href="img/portfolio/img-4.jpg">
-                          <figure><img src="img/portfolio/img-4.jpg" alt="">
-                            <figcaption>
-                              <h4>Business Card</h4>
-                              <p>Design</p>
-                            </figcaption>
+                      <div class="item col-lg-4 col-sm-6" style="position: absolute; left: 0%; top: 520px;">
+                        <a class="image-link" href="img/porfolio/painted-3.jpg">
+                          <figure><img src="img/porfolio/painted-3.jpg" alt="painted Image">
                           </figure>
                         </a>
                       </div>
-                      <div class="item col-lg-4 col-sm-6 brand"
-                        style="position: absolute; left: 49.9994%; top: 417.141px;"><a class="ajax-link" href="#">
-                          <figure><img src="img/portfolio/img-5.jpg" alt="">
-                            <figcaption>
-                              <h4>Back Pack</h4>
-                              <p>Brand</p>
-                            </figcaption>
-                          </figure>
-                        </a></div>
-                      <div class="item col-lg-4 col-sm-6 design" style="position: absolute; left: 0%; top: 436.117px;">
-                        <a class="ajax-link" href="#">
-                          <figure><img src="img/portfolio/img-6.jpg" alt="">
-                            <figcaption>
-                              <h4>Door Hangar</h4>
-                              <p>Design</p>
-                            </figcaption>
-                          </figure>
-                        </a>
-                      </div>
-                      <div class="item col-lg-4 col-sm-6 graphic" style="position: absolute; left: 0%; top: 642.875px;">
-                        <a class="image-link" href="img/portfolio/img-7.jpg">
-                          <figure><img src="img/portfolio/img-7.jpg" alt="">
-                            <figcaption>
-                              <h4>Notepad Design</h4>
-                              <p>graphic</p>
-                            </figcaption>
-                          </figure>
-                        </a>
-                      </div>
-                      <div class="item col-lg-4 col-sm-6 brand"
-                        style="position: absolute; left: 49.9994%; top: 729.875px;"><a class="image-link"
-                          href="img/portfolio/img-8.jpg">
-                          <figure><img src="img/portfolio/img-8.jpg" alt="">
-                            <figcaption>
-                              <h4>Creative Flyer</h4>
-                              <p>Brand</p>
-                            </figcaption>
-                          </figure>
-                        </a></div>
-                      <div class="item col-lg-4 col-sm-6 brand"
-                        style="position: absolute; left: 49.9994%; top: 898.477px;"><a class="video-link"
-                          href="https://www.youtube.com/watch?v=k_okcNVZqqI">
-                          <figure><img src="img/portfolio/img-9.jpg" alt="">
-                            <figcaption>
-                              <h4>Mobile App</h4>
-                              <p>Brand</p>
-                            </figcaption>
-                          </figure>
-                        </a></div>
-                      <div class="item col-lg-4 col-sm-6 graphic" style="position: absolute; left: 0%; top: 998px;"><a
-                          class="image-link" href="img/portfolio/img-10.jpg">
-                          <figure><img src="img/portfolio/img-10.jpg" alt="">
-                            <figcaption>
-                              <h4>Cup Design</h4>
-                              <p>Graphic</p>
-                            </figcaption>
-                          </figure>
-                        </a></div>
-                      <div class="item col-lg-4 col-sm-6 brand graphic"
-                        style="position: absolute; left: 49.9994%; top: 1253.6px;"><a class="ajax-link" href="#">
-                          <figure><img src="img/portfolio/img-11.jpg" alt="">
-                            <figcaption>
-                              <h4>Creative Box</h4>
-                              <p>brand</p>
-                            </figcaption>
-                          </figure>
-                        </a></div>
                     </div>
+
+                    <div class="row portfolio-items" data-filter="banners"
+                      style="position: relative; height: 1401.86px;">
+                      <div class="item col-lg-4 col-sm-6" data-filter="banners" id="banners"
+                        style="position: absolute; left: 0%; top: 0%;">
+                        <a class="image-link" href="img/porfolio/banner-1.jpg">
+                          <figure><img src="img/porfolio/banner-1.jpg" alt="banner Image">
+
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="item col-lg-4 col-sm-6" style="position: absolute; left: 49.9994%; top: 0%;">
+                        <a class="image-link" href="img/porfolio/banner-2.jpg">
+                          <figure><img src="img/porfolio/banner-2.jpg" alt="">
+
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="item col-lg-4 col-sm-6" style="position: absolute; left: 0%; top: 850px;">
+                        <a class="image-link" href="img/porfolio/banner-3.jpg">
+                          <figure><img src="img/porfolio/banner-3.jpg" alt="painted Image">
+                          </figure>
+                        </a>
+                      </div>
+                    </div>
+
+
+
+                    <div class="row portfolio-items" data-filter="posters"
+                      style="position: relative; height: 1401.86px;">
+                      <div class="item col-lg-4 col-sm-6" data-filter="posters" id="posters"
+                        style="position: absolute; left: 0%; top: 0%;">
+                        <a class="image-link" href="img/porfolio/poster-1.jpg">
+                          <figure></figure><img src="img/porfolio/poster-1.jpg" alt="poster Image">
+
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="item col-lg-4 col-sm-6" style="position: absolute; left: 49.9994%; top: 0%;">
+                        <a class="image-link" href="img/porfolio/poster-2.jpg">
+                          <figure><img src="img/porfolio/poster-2.jpg" alt="">
+
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="item col-lg-4 col-sm-6" style="position: absolute; left: 0%; top: 520px;">
+                        <a class="image-link" href="img/porfolio/poster-3.jpg">
+                          <figure><img src="img/porfolio/poster-3.jpg" alt="painted Image">
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="item col-lg-4 col-sm-6" style="position: absolute; left: 49.9994%; top: 520px;">
+                        <a class="image-link" href="img/porfolio/poster-4.jpg">
+                          <figure><img src="img/porfolio/poster-4.jpg" alt="">
+
+                          </figure>
+                        </a>
+                      </div>
+                    </div>
+
+
+                    <div class="row portfolio-items" data-filter="digital-drawing"
+                      style="position: relative; height: 1401.86px;">
+                      <div class="item col-lg-4 col-sm-6" data-filter="digital-drawing" id="digital-drawing"
+                        style="position: absolute; left: 0%; top: 0%;">
+                        <a class="image-link" href="img/porfolio/digital-drawing-1.jpg">
+                          <figure><img src="img/porfolio/digital-drawing-1.jpg" alt="digital-drawing Image">
+
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="item col-lg-4 col-sm-6" style="position: absolute; left: 49.9994%; top: 0%;">
+                        <a class="image-link" href="img/porfolio/digital-drawing-2.jpg.jpg">
+                          <figure><img src="img/porfolio/digital-drawing-2.jpg" alt="">
+
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="item col-lg-4 col-sm-6" style="position: absolute; left: 0%; top: 370px;">
+                        <a class="image-link" href="img/porfolio/digital-drawing-3.jpg">
+                          <figure><img src="img/porfolio/digital-drawing-3.jpg" alt="digital-drawing Image">
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="item col-lg-4 col-sm-6" style="position: absolute; left: 49.9994%;; top: 370px;">
+                        <a class="image-link" href="img/porfolio/digital-drawing-4.jpg">
+                          <figure><img src="img/porfolio/digital-drawing-4.jpg" alt="digital-drawing Image">
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="item col-lg-4 col-sm-6" style="position: absolute; left: 0%; top: 850px;">
+                        <a class="image-link" href="img/porfolio/digital-drawing-5.jpg">
+                          <figure><img src="img/porfolio/digital-drawing-5.jpg" alt="digital-drawing Image">
+                          </figure>
+                        </a>
+                      </div>
+                    </div>
+
+
+
+
+
+                    <div class="row portfolio-items" data-filter="logo" style="position: relative; height: 1401.86px;">
+                      <div class="item col-lg-4 col-sm-6" data-filter="logo" id="logo"
+                        style="position: absolute; left: 0%; top: 0%;">
+                        <a class="image-link" href="img/porfolio/logo-1.jpg">
+                          <figure><img src="img/porfolio/logo-1.jpg" alt="logo Image">
+
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="item col-lg-4 col-sm-6" style="position: absolute; left: 49.9994%; top: 0%;">
+                        <a class="image-link" href="img/porfolio/logo-2.jpg.jpg">
+                          <figure><img src="img/porfolio/logo-2.jpg" alt="logo image">
+
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="item col-lg-4 col-sm-6" style="position: absolute; left: 0%; top: 370px;">
+                        <a class="image-link" href="img/porfolio/logo-3.jpg">
+                          <figure><img src="img/porfolio/logo-3.jpg" alt="logo Image">
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="item col-lg-4 col-sm-6" style="position: absolute; left: 49.9994%;; top: 370px;">
+                        <a class="image-link" href="img/porfolio/logo-4.jpg">
+                          <figure><img src="img/porfolio/logo-4.jpg" alt="logo Image">
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="item col-lg-4 col-sm-6" style="position: absolute; left: 0%; top: 550px;">
+                        <a class="image-link" href="img/porfolio/logo-5.jpg">
+                          <figure><img src="img/porfolio/logo-5.jpg" alt="logo Image">
+                          </figure>
+                        </a>
+                      </div>
+                      <div class="item col-lg-4 col-sm-6" style="position: absolute; left: 49.9994%; top: 550px;">
+                        <a class="image-link" href="img/porfolio/logo-6.jpg">
+                          <figure><img src="img/porfolio/logo-6.jpg" alt="logo Image">
+                          </figure>
+                        </a>
+                      </div>
+                    </div>
+
+
+
+
+
+
+
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="simplebar-placeholder" style="width: auto; height: 1683px;"></div>
         </div>
+        <div class="simplebar-placeholder" style="width: auto; height: auto;"></div>
+
         <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
           <div class="simplebar-scrollbar" style="width: 0px; display: none; transform: translate3d(0px, 0px, 0px);">
           </div>
         </div>
         <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
           <div class="simplebar-scrollbar"
-            style="height: 296px; transform: translate3d(0px, 0px, 0px); display: block;"></div>
+            style="height: 296px; transform: translate3d(0px, 0px, 0px); display: block;">
+          </div>
         </div>
       </section>
-
     </div>
+  </div>
 
 </body>
 

@@ -74,6 +74,13 @@ a:focus {
 
 /************ Margin & Padding ************/
 
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+.mb-50 {
+    margin-bottom: 50px !important;
+}
+
 
 
 
@@ -645,12 +652,150 @@ header .header-mobile .header-toggle i {
 }
 
 
+/********** Form **********/
+
+.input {
+    display: block;
+    position: relative;
+}
+
+.input__field {
+    width: 100%;
+    border: 2px solid #999;
+    padding: 5px 10px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    color: #222;
+}
+
+.input__field.cf-error {
+    border-color: #ff0000;
+}
+
+.input__field:focus {
+    outline: none;
+    border-color: #222;
+}
+
+.input__label {
+    font-weight: 500;
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    z-index: 0;
+}
+
+.input__field:focus + .input__label,
+.input--filled .input__label {
+    font-size: 14px;
+    top: -25px;
+    left: 0;
+}
+
+.input--filled .input__field {
+    border-color: #222;
+}
+
+textarea {
+    resize: none;
+    height: auto;
+}
 
 
 
+/********** Button **********/
+
+.btn-main {
+    border: 2px solid #222;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    cursor: pointer;
+    font-size: 14px;
+    color: #222;
+    font-weight: 500;
+    position: relative;
+    line-height: 100%;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+
+.btn-main:hover,
+.btn-main:focus {
+    color: #fff;
+}
+
+.btn-main:hover:after,
+.btn-main:focus:after {
+    opacity: 1;
+    left: 0;
+    width: 100%;
+}
+
+.btn-main:after {
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: 100%;
+    top: 0;
+    left: 35%;
+    background-color: #222;
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: -1;
+}
+
+blockquote {
+    font-size: 18px;
+    color: #222;
+    border-left: 4px solid #222;
+    font-style: italic;
+    padding-left: 20px;
+    margin: 40px 0;
+    font-weight: 500;
+}
 
 
+/*============  Contact Section ============*/
 
+.contact-section {
+    background-color: #FBFBFB;
+}
+
+.contact-section #map {
+    width: 100%;
+    height: 200px;
+}
+
+.contact-section .contact-info {
+    text-align: center;
+}
+
+.contact-section .contact-info .info-item .icon {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-section .contact-info .info-item h5 {
+    font-size: 18px;
+}
 
 
 
@@ -670,6 +815,7 @@ header .header-mobile .header-toggle i {
         margin-top: 0;
     }
 }
+
 
 @media screen and (max-width: 767px) {
     header .header-main {
