@@ -298,10 +298,6 @@
                         </a>
                       </div>
                     </div>
-
-
-
-
                   </div>
                 </div>
               </div>
@@ -408,6 +404,25 @@
     });
 
 
+  </script>
+
+  <script>
+    // 获取所有按钮元素
+    const buttons = document.querySelectorAll('button');
+
+    // 为每个按钮添加点击事件监听器
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        // 移除所有按钮的“active”类
+        buttons.forEach(btn => btn.classList.remove('active'));
+
+        // 将当前点击的按钮设置为选中状态
+        button.classList.add('active');
+      });
+    });
+
+    // 默认选中"Painted"按钮
+    document.getElementById('button1').classList.add('active');
   </script>
 </body>
 

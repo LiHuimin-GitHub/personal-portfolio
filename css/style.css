@@ -515,7 +515,9 @@ header .header-mobile .header-toggle i {
     transition: all .3s ease;
 }
 
+
 .portfolio-section .portfolio-filter ul li button{
+    
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
@@ -528,11 +530,20 @@ header .header-mobile .header-toggle i {
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
-    border-radius: 12px;
+    border-radius: 27px;
     box-shadow: none;
     
     
     
+    
+}
+
+.portfolio-section .portfolio-filter ul li button.active {
+     background-color: #222;
+    -webkit-border-radius: 27px;
+    border-radius: 27px;
+    color: #FBFBFB;
+
 }
 
 
